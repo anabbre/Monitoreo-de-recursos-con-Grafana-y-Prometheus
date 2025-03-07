@@ -38,7 +38,7 @@ Después de ejecutar esto, accede a Grafana en ```http://localhost:3000``` y Pro
 
 - En **Prometheus**: Usé un archivo `prometheus.yml` para configurar los targets (Grafana, node_exporter).
   
-![image](https://github.com/user-attachments/assets/2b4dda32-401e-4114-9d72-2e49407afc53)  
+![image](https://github.com/user-attachments/assets/116a7060-c608-4f19-83b3-3fa2ba2a5305)
 
 - **Docker Compose:** Para desplegar los servicios de Grafana, Prometheus y Node Exporter, utilizamos el archivo `docker-compose.yml`.
 
