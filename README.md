@@ -52,5 +52,5 @@ He creado un dashboard en Grafana que visualiza las siguientes métricas:
 
 A continuación se muestra cómo se ven las métricas en Grafana:
 
-![image](https://github.com/user-attachments/assets/adefddc0-f605-49cb-b3e4-dfee6196e5af)
-![image](https://github.com/user-attachments/assets/8dacfa31-5f16-4b5e-b037-c810f374c9a6)
+![Uso de CPU](https://github.com/user-attachments/assets/1dd04719-0eba-4628-ae78-945c213dd91e)
+![Uso de Memoria](https://github.com/user-attachments/assets/00deda92-1feb-4e45-a72b-f562e0bbd69b)
