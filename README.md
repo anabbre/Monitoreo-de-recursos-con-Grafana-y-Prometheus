@@ -20,8 +20,7 @@ Este proyecto implementa un sistema de monitorización de recursos utilizando **
    wsl --install
    ```
 2. Inicia **Ubuntu**
-   ```wsl.exe -d Ubuntu
-   ```
+   ```wsl.exe -d Ubuntu```
 3. Instala **Docker**
    ```sudo apt install docker.io -y
    ```
