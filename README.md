@@ -1,59 +1,66 @@
 # Monitorización de recursos con Grafana y Prometheus
 
-Este proyecto implementa un sistema de monitorización de recursos utilizando **Grafana** y **Prometheus**. El proyecto visualiza métricas del uso de CPU, memoria y carga del sistema a través de dashboards en Grafana. Además, se utiliza Docker para contenedores y WSL2 para ejecutar en Windows.  
+Este proyecto implementa un sistema de monitoreo de recursos utilizando **Grafana** y **Prometheus** para visualizar métricas de uso de CPU, memoria y carga del sistema a través de dashboards. Utiliza Docker para desplegar los servicios y WSL2 para ejecutar el entorno Linux sobre Windows.  
 
-
+  
 ## Tecnologías utilizadas
 
-- **Grafana**: Herramienta para visualizar métricas.
-- **Prometheus**: Sistema de monitoreo y recolección de métricas.
-- **Docker**: Contenedores para ejecutar Prometheus, Grafana y Node Exporter.
-- **WSL2**: Ejecutar los contenedores en un entorno Linux sobre Windows.
-- **Node Exporter**: Exportador para recolectar métricas del sistema operativo.
+- **Grafana**: Plataforma para visualizar y analizar métricas en tiempo real a través de dashboards.
+- **Prometheus**: Sistema de monitoreo y recolección de métricas, se integra con Grafana para graficar los datos.
+- **Docker**: Contenedores que facilitan la ejecución de los servicios de Prometheus, Grafana y Node Exporter de forma aislada.
+- **WSL2**: Proporciona un entorno Linux sobre Windows, ideal para ejecutar contenedores Docker en un sistema Windows.
+- **Node Exporter**: Herramienta que recoge métricas sobre el hardware y el sistema operativo, usada por Prometheus.
 
 
 ## Instalación
 
 1. Instalar **WSL2** en Windows:
-
    ```bash
    wsl --install
    ```
-2. Inicia **Ubuntu**
+2. Inicia **Ubuntu** con:
    ```bash
    wsl.exe -d Ubuntu
    ```
-4. Instala **Docker**
+4. Instala **Docker**. Una vez dentro de Ubuntu, instala Docker con: 
    ```bash
    sudo apt install docker.io -y
    ```
-5. Ejecuta los contenedores:
+5. Ejecuta los contenedores. Navega al directorio del proyecto y ejecuta los contenedores con: 
    ```bash
    docker-compose up
    ```
-Después de ejecutar esto, accede a Grafana en ```http://localhost:3000``` y Prometheus en ```http://localhost:9090```  
+![image](https://github.com/user-attachments/assets/541189cb-6b23-4daa-97d7-43965a09d685)  
+
+
+Esto descargará las imágenes necesarias y pondrá en marcha Prometheus y Grafana.  
+
+  
+Accede a Grafana en ```http://localhost:3000``` y Prometheus en ```http://localhost:9090```  
 
 
 ## Configuración
 
-- En **Prometheus**: Usé un archivo `prometheus.yml` para configurar los targets (Grafana, node_exporter).
+- En **Prometheus**: Se utiliza el archivo prometheus.yml para configurar los targets, que incluyen Prometheus, Grafana y Node Exporter.
   
 ![image](https://github.com/user-attachments/assets/116a7060-c608-4f19-83b3-3fa2ba2a5305)
 
-- **Docker Compose:** Para desplegar los servicios de Grafana, Prometheus y Node Exporter, utilizamos el archivo `docker-compose.yml`.
+- **Docker Compose:** Usamos el archivo docker-compose.yml para gestionar la orquestación de los servicios de Grafana, Prometheus y Node Exporter. Esto simplifica la ejecución de los contenedores.
 
 ![image](https://github.com/user-attachments/assets/ce152a7a-033f-4606-8d12-e771ea405775)  
 
 
-- En **Grafana**: Agregué el origen de datos de Prometheus para visualizar las métricas.
+- En **Grafana**: Configuramos el origen de datos de Prometheus para permitir la visualización de las métricas. A continuación, se explica cómo se configuran los servicios.
 
-## Dashboard
+  
+## Dashboard en Grafana
 
-He creado un dashboard en Grafana que visualiza las siguientes métricas:
+Este proyecto incluye varios dashboard en Grafana que visualiza tres métricas clave para el monitoreo del sistema:  
 
-- Uso de **CPU**
-- Uso de **Memoria**
-- Carga del **Sistema**
+
+- Uso de **CPU** Visualiza la carga del procesador en tiempo real.
+- Uso de **Memoria** Muestra la memoria total utilizada y disponible en el sistema.
+- Carga del **Sistema** Indica la carga del sistema a lo largo del tiempo.
 
 
 ## Imágenes del Dashboard
@@ -66,5 +73,5 @@ A continuación se muestra cómo se ven las métricas en Grafana:
 
 ## Conclusión
 
-Este proyecto me ha permitido aplicar mis conocimientos sobre **monitorización** de sistemas y el uso de **Docker** para la automatización de la infraestructura. Además, me ha permitido aprender más sobre herramientas como **Prometheus** y **Grafana** para la visualización de datos.
+Este proyecto me ha permitido aplicar mis conocimientos sobre **monitoreo de sistemas**, el uso de **Docker** para la automatización de la infraestructura y la gestión de recursos. Además, me ha ayudado a profundizar en herramientas de monitoreo como **Prometheus** y **Grafana**, ampliando mi capacidad para gestionar y visualizar métricas de un sistema de manera efectiva. 
 
