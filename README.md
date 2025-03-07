@@ -37,6 +37,8 @@ Después de ejecutar esto, accede a Grafana en ```http://localhost:3000``` y Pro
 ## Configuración
 
 - En **Prometheus**: Usé un archivo `prometheus.yml` para configurar los targets (Grafana, node_exporter).
+  ![image](https://github.com/user-attachments/assets/793a7bcb-36a4-48bb-a4c3-82810f62e377)
+
 - En **Grafana**: Agregué el origen de datos de Prometheus para visualizar las métricas.
 
 ## Dashboard
@@ -53,4 +55,10 @@ He creado un dashboard en Grafana que visualiza las siguientes métricas:
 A continuación se muestra cómo se ven las métricas en Grafana:
 
 ![Uso de CPU](https://github.com/user-attachments/assets/1dd04719-0eba-4628-ae78-945c213dd91e)
-![Uso de Memoria](https://github.com/user-attachments/assets/00deda92-1feb-4e45-a72b-f562e0bbd69b)
+![Uso de Memoria](https://github.com/user-attachments/assets/00deda92-1feb-4e45-a72b-f562e0bbd69b)  
+
+
+## Conclusión
+
+Este proyecto me ha permitido aplicar mis conocimientos sobre **monitorización** de sistemas y el uso de **Docker** para la automatización de la infraestructura. Además, me ha permitido aprender más sobre herramientas como **Prometheus** y **Grafana** para la visualización de datos.
+
