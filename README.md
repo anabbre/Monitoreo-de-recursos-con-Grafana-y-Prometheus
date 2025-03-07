@@ -20,13 +20,16 @@ Este proyecto implementa un sistema de monitorización de recursos utilizando **
    wsl --install
    ```
 2. Inicia **Ubuntu**
-   ```wsl.exe -d Ubuntu
+   ```bash
+   wsl.exe -d Ubuntu
    ```
 4. Instala **Docker**
-   ```sudo apt install docker.io -y
+   ```bash
+   sudo apt install docker.io -y
    ```
 5. Ejecuta los contenedores:
-   ```docker-compose up
+   ```bash
+   docker-compose up
    ```
 Después de ejecutar esto, accede a Grafana en ```http://localhost:3000``` y Prometheus en ```http://localhost:9090```  
 
