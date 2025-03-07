@@ -38,3 +38,19 @@ Después de ejecutar esto, accede a Grafana en ```http://localhost:3000``` y Pro
 
 - En **Prometheus**: Usé un archivo `prometheus.yml` para configurar los targets (Grafana, node_exporter).
 - En **Grafana**: Agregué el origen de datos de Prometheus para visualizar las métricas.
+
+## Dashboard
+
+He creado un dashboard en Grafana que visualiza las siguientes métricas:
+
+- Uso de **CPU**
+- Uso de **Memoria**
+- Carga del **Sistema**
+
+
+## Imágenes del Dashboard
+
+A continuación se muestra cómo se ven las métricas en Grafana:
+
+![Uso de CPU](ruta_de_imagen_1.png)
+![Uso de Memoria](ruta_de_imagen_2.png)
