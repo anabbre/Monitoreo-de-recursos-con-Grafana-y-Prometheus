@@ -37,6 +37,7 @@ Después de ejecutar esto, accede a Grafana en ```http://localhost:3000``` y Pro
 ## Configuración
 
 - En **Prometheus**: Usé un archivo `prometheus.yml` para configurar los targets (Grafana, node_exporter).
+  
 ![image](https://github.com/user-attachments/assets/2b4dda32-401e-4114-9d72-2e49407afc53)
 
 - En **Grafana**: Agregué el origen de datos de Prometheus para visualizar las métricas.
