@@ -31,6 +31,8 @@ Este proyecto implementa un sistema de monitoreo de recursos utilizando **Grafan
    docker-compose up
    ```
 Esto descargará las imágenes necesarias y pondrá en marcha Prometheus y Grafana.  
+
+  
 ![image](https://github.com/user-attachments/assets/ebb2de9b-c3ca-411e-9956-b89040cdf7bf)
 
 
