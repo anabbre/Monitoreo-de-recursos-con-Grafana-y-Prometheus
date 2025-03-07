@@ -30,10 +30,9 @@ Este proyecto implementa un sistema de monitoreo de recursos utilizando **Grafan
    ```bash
    docker-compose up
    ```
-![image](https://github.com/user-attachments/assets/b4931a0c-926e-4f95-b2aa-1bf2dbf07862)
-
-
 Esto descargará las imágenes necesarias y pondrá en marcha Prometheus y Grafana.  
+![image](https://github.com/user-attachments/assets/ebb2de9b-c3ca-411e-9956-b89040cdf7bf)
+
 
   
 Accede a Grafana en ```http://localhost:3000``` y Prometheus en ```http://localhost:9090```  
