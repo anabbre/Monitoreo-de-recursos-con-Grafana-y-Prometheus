@@ -41,7 +41,7 @@ Después de ejecutar esto, accede a Grafana en ```http://localhost:3000``` y Pro
 ![image](https://github.com/user-attachments/assets/2b4dda32-401e-4114-9d72-2e49407afc53)  
 
 - **Docker Compose:** Para desplegar los servicios de Grafana, Prometheus y Node Exporter, utilizamos el archivo `docker-compose.yml`.
-![image](https://github.com/user-attachments/assets/606f8425-19b2-48ea-90c6-0fee50df3718)
+- ![image](https://github.com/user-attachments/assets/606f8425-19b2-48ea-90c6-0fee50df3718)
 
 - En **Grafana**: Agregué el origen de datos de Prometheus para visualizar las métricas.
 
